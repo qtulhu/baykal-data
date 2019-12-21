@@ -1,1 +1,3 @@
-web: python baykal-data.py runserver 0.0.0.0:5000
+web: gunicorn runp-heroku:app
+init: python db_create.py && pybabel compile -d app/translations
+upgrade: python db_upgrade.py && pybabel compile -d app/translations
