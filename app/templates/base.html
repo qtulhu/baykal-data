@@ -70,7 +70,7 @@
     <style>
       body 
       {
-        padding-top: 70px;
+        background: #fff;
         font-family: 'Roboto', sans-serif;
       }
       h2 
@@ -121,12 +121,8 @@
 
     </head>
     <body>
-        <div>
-             Baykal-data:
-            <a href="{{ url_for('index') }}">Home</a>
-            <a href="{{ url_for('login') }}">Login</a>
-        </div>
-        <hr>
+        
+    
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         <ul>
@@ -137,11 +133,15 @@
         {% endif %}
         {% endwith %}
   <div class="left-column">
-            
+            <div>
+             Baykal-data:
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('login') }}">Login</a>
+        </div>
     <div class="block-datetime">
       <div class="row">
         <div class="col-md-6">
-          <p>Выбрать дату</p>
+          
           
         </div>
       </div>
@@ -157,7 +157,7 @@
     <div class="block-datetime">
       <div class="row">
         <div class="col-md-6">
-          <p>Выбрать время</p>
+          
         </div>
       </div>
       <div class="row">
