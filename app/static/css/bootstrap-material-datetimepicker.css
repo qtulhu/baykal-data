@@ -82,4 +82,4 @@
 }
 
 .left-column {width: 25%; float: left; display: block; padding-left:15px;}
-.folium-map {width: 70%; display: block;}
+.folium-map {width: 75%; display: block; float: right;}
